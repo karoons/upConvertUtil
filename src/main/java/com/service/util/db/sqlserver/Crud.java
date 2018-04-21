@@ -6,7 +6,7 @@
 package com.service.util.db.sqlserver;
 
 import com.service.util.Utility;
-import com.service.util.convert.TimeUtil;
+import com.service.util.TimeUtil;
 import java.lang.reflect.Field;
 import java.sql.Timestamp;
 import java.util.Date;

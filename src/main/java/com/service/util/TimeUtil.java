@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.service.util.convert;
+package com.service.util;
 
 import java.sql.Timestamp;
 import java.text.DateFormat;
