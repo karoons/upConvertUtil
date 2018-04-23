@@ -4,6 +4,9 @@
  * and open the template in the editor.
  */
 package com.service.util;
+
+import com.service.util.time.DateTimeConverter;
+import java.sql.Timestamp;
 import java.util.Date;
 
 /**
@@ -12,7 +15,12 @@ import java.util.Date;
  */
 public class Hello {
 
-    public static void main(String[] args) {
-        System.out.println("------------------- "+new Date());
+    public static void main(String[] args) throws Exception {
+        DateTimeConverter dt = new DateTimeConverter();
+//        System.out.println("------------------- " + dt.convertToString("FF", new Date()));
+        System.out.println("------------------- " + dt.convertToString("yyyy-MM-dd HH:mm:ss", new Timestamp(new Date().getTime())));
+//        System.out.println("------------------- " + dt.convertToString("yyyy.MM.dd", new Date()));
+//        System.out.println("------------------- " + dt.convertStringToDate("yyyy.MM.dd HH:mm", "2018.01.30 16:49"));
+
     }
 }
